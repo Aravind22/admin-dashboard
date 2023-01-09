@@ -1,7 +1,6 @@
 import '../index.css'
 import React, { useState } from "react";
-import { Box, Card, CardActions, Button, Container, CardHeader, CardContent } from '@mui/material';
-import { Typography, Stack } from '@mui/material';
+import { Box, Card, CardActions, Button, Container, CardHeader, CardContent, Stack, Typography } from '@mui/material';
 import TextareaAutosize from '@mui/base/TextareaAutosize';
 import { AdminField } from '../components/AdminField';
 import { NavBar } from '../navbar/navbar';
