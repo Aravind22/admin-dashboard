@@ -4,6 +4,7 @@ import { Box, Card, CardActions, Button, Container, CardHeader, CardContent } fr
 import { Typography, Stack } from '@mui/material';
 import TextareaAutosize from '@mui/base/TextareaAutosize';
 import { AdminField } from '../components/AdminField';
+import { NavBar } from '../navbar/navbar';
 
 export const AdminDashboard = () => {
     // const [data, setData] = useState({})
@@ -31,6 +32,7 @@ export const AdminDashboard = () => {
     ]
     return (
         <Container >
+        <NavBar />
             <Card>
                 <CardHeader className='card-header'
                     title="Webiste Design"
