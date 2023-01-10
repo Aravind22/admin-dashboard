@@ -17,7 +17,7 @@ export const NavBar = () => {
     const menuItems = ['Business', 'Domains', 'Pages']
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position="static" className="app-bar">
                 <Toolbar>
                     <IconButton
                         size="large"
