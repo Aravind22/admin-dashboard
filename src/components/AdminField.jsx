@@ -1,13 +1,13 @@
 import React from 'react';
 import { Typography, TextField, Stack } from '@mui/material';
 
-export const AdminField = ({text, id, label}) => {
+export const AdminField = (props) => {
     return (
         <Stack direction="column" gap={1} className='card-content-layout'>
             <Typography variant="body1" minWidth={150}>
-                {text}
+                {props.text}
             </Typography>
-            <TextField id={id} label={label} variant="outlined" size="small" />
+            <TextField id={props.id} label={props.label} onChange={(event) => props.handleOnChange(props.label, event)} variant="outlined" size="small" />
         </Stack>
     )
 }

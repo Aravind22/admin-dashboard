@@ -31,9 +31,9 @@ export const NavBar = () => {
                     {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 News
               </Typography> */}
-                    {menuItems.map((menu) => {
+                    {menuItems.map((menu, index) => {
                         return (
-                            <Typography variant="h6" component={"div"} sx={{marginLeft:"16px"}}>
+                            <Typography variant="h6" component={"div"} sx={{marginLeft:"16px"}} key={index}>
                                 {menu}
                             </Typography>
                         )

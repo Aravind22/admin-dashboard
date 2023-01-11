@@ -48,6 +48,17 @@ export const AdminDashboardPage = () => {
             'id': "phoneNumber"
         }
     ]
+
+    let [websiteDetails, setWebsiteDetails] = useState({})
+
+    const handleOnChange = (property, event) => {
+        setWebsiteDetails({...websiteDetails, [property]: event.target.value })
+    }
+
+    const handleSubmit = () => {
+        console.log(websiteDetails)
+    }
+
     return (
         <Container >
             <NavBar />
@@ -57,29 +68,22 @@ export const AdminDashboardPage = () => {
                 />
                 <CardContent className='card-layout'>
                     {fields.map((item, index) => {
-                        return (<AdminField text={item.text} id={item.id} label={item.text} key={item.id} />)
+                        return (<AdminField text={item.text} id={item.id} label={item.id} handleOnChange={handleOnChange} key={item.id}/>)
                     })}
 
                 </CardContent>
-                <CardActions className='card-action-style'>
-                    <Button size="small">Submit</Button>
-                </CardActions>
-            </Card>
-            <Card sx={{ marginTop: "16px" }}>
-                <CardHeader className='card-header'
-                    title="Website Descriptions"
-                />
                 <CardContent className='card-layout'>
                     {
                         textAreaFields.map((item, index) => {
-                            return (<AdminTextField text={item.text} id={item.id} label={item.text} key={item.id} />)
+                            return (<AdminTextField text={item.text} id={item.id} label={item.id} handleOnChange={handleOnChange} key={item.id} />)
                         })
                     }
                 </CardContent>
                 <CardActions className='card-action-style'>
-                    <Button size="small">Submit</Button>
+                    <Button className='submit-button' size="small" onClick={handleSubmit}>Submit</Button>
                 </CardActions>
             </Card>
         </Container>
     )
 }
+
