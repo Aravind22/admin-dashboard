@@ -52,6 +52,7 @@ export const AdminDashboardPage = () => {
     let [websiteDetails, setWebsiteDetails] = useState({})
 
     const handleOnChange = (property, event) => {
+        console.log('aaaa')
         setWebsiteDetails({...websiteDetails, [property]: event.target.value })
     }
 

@@ -30,3 +30,23 @@
 .MuiSlider-root:hover {
     color: #2e8b57;
 }
+
+.css-16cvb1l-MuiCardMedia-root {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.css-1ucnu3w-MuiStack-root {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.css-11qr2p8-MuiButtonBase-root-MuiButton-root {
+    width: 349px !important;
+    height: fit-content !important;
+}
+
+.css-1knaqv7-MuiButtonBase-root-MuiButton-root {
+    background-color:  #1976d2 !important;
+    color: azure !important;
+}
